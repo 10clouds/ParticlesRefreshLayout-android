@@ -1,0 +1,110 @@
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+    <ImageView
+            android:id="@+id/dots"
+            android:layout_width="@dimen/plantViewHolderDotsWidth"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/plantViewHolderDotsMargin"
+            android:layout_marginStart="@dimen/plantViewHolderDotsMargin"
+            android:tint="#b1b2b2"
+            app:layout_constraintVertical_bias="0.65"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:srcCompat="@drawable/ic_menu"/>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/back_plant_vh"
+            android:layout_marginLeft="@dimen/plantViewHolderMarginLeft"
+            android:layout_marginRight="@dimen/plantViewHolderMarginRight"
+            android:layout_marginTop="@dimen/plantViewHolderMarginTop"
+            android:layout_marginStart="@dimen/plantViewHolderMarginLeft"
+            android:layout_marginEnd="@dimen/plantViewHolderMarginRight"
+            app:layout_constraintLeft_toRightOf="@id/dots"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <android.support.constraint.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="@dimen/plantViewHolderHorizontalGuidelineBegin"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"/>
+
+        <ImageView
+                android:id="@+id/photo"
+                android:layout_width="@dimen/plantViewHolderPhotoSize"
+                android:layout_height="@dimen/plantViewHolderPhotoSize"
+                android:background="@drawable/back_rounded_corners"
+                android:layout_marginRight="@dimen/plantViewHolderPhotoMargin"
+                android:layout_marginEnd="@dimen/plantViewHolderPhotoMargin"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/plantViewHolderNameMarginLeft"
+                android:layout_marginStart="@dimen/plantViewHolderNameMarginLeft"
+                android:layout_marginEnd="@dimen/plantViewHolderNameMarginRight"
+                android:layout_marginRight="@dimen/plantViewHolderNameMarginRight"
+                android:fontFamily="@font/sf_protext_medium"
+                android:textColor="#5d5d5e"
+                tools:text="Abies alba"
+                app:layout_constraintVertical_bias="0.8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/price"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/guideline"/>
+
+        <TextView
+                android:id="@+id/price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/plantViewHolderPriceMargin"
+                android:layout_marginLeft="@dimen/plantViewHolderPriceMargin"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textColor="#689164"
+                android:textSize="10sp"
+                tools:ignore="SmallSp"
+                tools:text="$ 4.60"
+                app:layout_constraintVertical_bias="0.8"
+                app:layout_constraintRight_toLeftOf="@id/photo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/guideline"/>
+
+        <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/plantViewHolderDescriptionMargin"
+                android:layout_marginStart="@dimen/plantViewHolderDescriptionMargin"
+                android:fontFamily="@font/sf_protext_regular"
+                android:textColor="#b4bcc1"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_marginRight="@dimen/plantViewHolderDescriptionMargin"
+                tools:text="grow in light shade but develop..."
+                app:layout_constraintVertical_bias="0.2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/photo"
+                app:layout_constraintTop_toTopOf="@id/guideline"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

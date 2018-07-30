@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="plantViewHolderBackgroundCorners">6dp</dimen>
+    <dimen name="plantViewHolderMarginTop">8dp</dimen>
+    <dimen name="plantViewHolderMarginLeft">8dp</dimen>
+    <dimen name="plantViewHolderMarginRight">16dp</dimen>
+
+    <dimen name="plantViewHolderHorizontalGuidelineBegin">37dp</dimen>
+    <dimen name="plantViewHolderDescriptionMargin">16dp</dimen>
+    <dimen name="plantViewHolderPhotoSize">56dp</dimen>
+    <dimen name="plantViewHolderPhotoMargin">12dp</dimen>
+    <dimen name="plantViewHolderDotsMargin">8dp</dimen>
+    <dimen name="plantViewHolderDotsWidth">24dp</dimen>
+    <dimen name="plantViewHolderNameMarginRight">8dp</dimen>
+    <dimen name="plantViewHolderNameMarginLeft">16dp</dimen>
+    <dimen name="plantViewHolderPriceMargin">16dp</dimen>
+
+    <dimen name="pullToRefreshTextMargin">24dp</dimen>
+    <dimen name="pullToRefreshDescriptionWidth">170dp</dimen>
+    <dimen name="pullToRefreshDescriptionMarginTop">8dp</dimen>
+    <dimen name="pullToRefreshIconSize">60dp</dimen>
+    <dimen name="pullToRefreshIconMargin">32dp</dimen>
+    <dimen name="pullToRefreshTextMarginTop">16dp</dimen>
+
+</resources>

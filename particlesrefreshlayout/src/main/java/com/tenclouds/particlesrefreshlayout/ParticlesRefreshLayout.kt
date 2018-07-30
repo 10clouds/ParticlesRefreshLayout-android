@@ -23,8 +23,8 @@ private const val CIRCLE_SIZE = 13
 private const val MOVE_HEIGHT_TO_REFRESH_HEIGHT_ANIMATION_DURATION = 300L
 private const val MOVE_CIRCLE_TO_TOP_OF_PARTICLES_ANIMATION_DURATION = 300L
 private const val HIDE_CONTAINER_ANIMATION_DURATION = 300L
-private const val SHOW_CIRCLE_ANIMATION_DURATION = 300L
-private const val HIDE_CIRCLE_ANIMATION_DURATION = 300L
+private const val SHOW_CIRCLE_ANIMATION_DURATION = 100L
+private const val HIDE_CIRCLE_ANIMATION_DURATION = 100L
 
 class ParticlesRefreshLayout : FrameLayout {
 
@@ -173,7 +173,7 @@ class ParticlesRefreshLayout : FrameLayout {
     }
 
     fun stopRefreshing() {
-        hideCircleAnimation.start()
+        if (isCircleVisible) hideCircleAnimation.start()
         hideContainerAnimation.start()
         particlesAnimationView.stopRefreshing()
         isRefreshing = false
