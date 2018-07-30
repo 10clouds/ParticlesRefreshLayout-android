@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ParticlesRefreshLayout</string>
+    <string name="exception_more_than_one_child">You can attach only one child to the ParticlesRefreshLayout</string>
+</resources>

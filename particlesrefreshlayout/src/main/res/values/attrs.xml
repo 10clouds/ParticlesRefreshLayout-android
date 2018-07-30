@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ParticlesRefreshLayout">
+        <attr name="accentColor" format="color"/>
+        <attr name="isSmallSize" format="boolean" />
+    </declare-styleable>
+</resources>
