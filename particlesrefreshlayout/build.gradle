@@ -1,14 +1,17 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
+apply from: 'script/version.gradle'
+apply from: 'script/deploy.gradle'
+
 android {
     compileSdkVersion 27
 
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
+        versionCode getLibraryVersionCode()
+        versionName getLibraryVersionName()
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -20,6 +23,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+}
+
+tasks.withType(Javadoc).all {
+    enabled = false
 }
 
 dependencies {
