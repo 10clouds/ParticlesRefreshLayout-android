@@ -1,0 +1,10 @@
+apply plugin: 'com.novoda.bintray-release'
+publish {
+    userOrg = '10clouds-android'
+    groupId = 'com.tenclouds'
+    repoName = 'particlesrefreshlayout'
+    artifactId = 'particles-refresh-layout'
+    publishVersion = getLibraryVersionName()
+    desc = 'Particles Refresh Layout library for Android'
+    website = 'https://github.com/10clouds/ParticlesRefreshLayout-android'
+}

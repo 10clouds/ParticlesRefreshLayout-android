@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ParticlesRefreshLayout</string>
+    <string name="pull_to_refresh">Pull to refresh</string>
+    <string name="refresh_your_items_list_by_pulling_down_the_boxes">Refresh your items list by pulling down the boxes.</string>
+    <string name="price">$ %1$.2f</string>
+</resources>
