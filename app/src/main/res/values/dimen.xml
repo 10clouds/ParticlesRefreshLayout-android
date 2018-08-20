@@ -18,7 +18,7 @@
     <dimen name="pullToRefreshTextMargin">24dp</dimen>
     <dimen name="pullToRefreshDescriptionWidth">170dp</dimen>
     <dimen name="pullToRefreshDescriptionMarginTop">8dp</dimen>
-    <dimen name="pullToRefreshIconSize">60dp</dimen>
+    <dimen name="pullToRefreshIconSize">40dp</dimen>
     <dimen name="pullToRefreshIconMargin">32dp</dimen>
     <dimen name="pullToRefreshTextMarginTop">16dp</dimen>
 

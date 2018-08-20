@@ -43,7 +43,7 @@
             android:id="@+id/pullToRefreshIcon"
             android:layout_width="@dimen/pullToRefreshIconSize"
             android:layout_height="@dimen/pullToRefreshIconSize"
-            android:background="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_refresh"
             android:layout_marginRight="@dimen/pullToRefreshIconMargin"
             android:layout_marginEnd="@dimen/pullToRefreshIconMargin"
             app:layout_constraintTop_toTopOf="@id/topContainer"
